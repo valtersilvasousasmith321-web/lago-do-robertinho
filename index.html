@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lago do Robertinho - Teste de Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOPO / HEADER -->
+    <header class="main-header">
+        <div class="logo">Lago do Robertinho</div>
+       
+        <!-- Botão do Menu Hambúrguer (Só aparece no celular) -->
+        <button class="menu-toggle" id="menuToggle">☰</button>
+
+        <nav class="nav-menu" id="navMenu">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#chales">Chalés</a>
+            <a href="#restaurante">Restaurante</a>
+            <a href="#lazer">Lazer</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        <div class="header-contact">(95) 99155-7669</div>
+    </header>
+
+    <!-- BANNER PRINCIPAL -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-content">
+            <h1>VENHA VIVER DIAS INCRÍVEIS NO <br><span>Lago do Robertinho</span></h1>
+            <p>Águas cristalinas, natureza, conforto e momentos inesquecíveis!</p>
+            <div class="hero-buttons">
+                <a href="https://wa.me" target="_blank" class="btn-primary">FAÇA SUA RESERVA</a>
+                <a href="https://wa.me" target="_blank" class="btn-secondary">FALE CONOSCO</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- POR QUE ESCOLHER -->
+    <section class="features-section">
+        <h2>POR QUE ESCOLHER O LAGO DO ROBERTINHO?</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="icon">💧</div>
+                <h3>ÁGUAS CRISTALINAS</h3>
+                <p>Águas limpas e tranquilas para toda a família.</p>
+            </div>
+            <div class="feature-item">
+                <div class="icon">🏡</div>
+                <h3>CHALÉS</h3>
+                <p>Acomodações aconchegantes para descansar com conforto.</p>
+            </div>
+            <div class="feature-item">
+                <div class="icon">🍽️</div>
+                <h3>GASTRONOMIA</h3>
+                <p>Cardápio variado com porções, refeições e bebidas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script para fazer o menu funcionar no celular -->
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
